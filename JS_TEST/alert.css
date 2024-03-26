@@ -1,0 +1,10 @@
+   
+   
+ .alert-box
+ {  backgroiund: rgb(16, 16, 178);
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;        /* 화면 가리기*/
+
+}
