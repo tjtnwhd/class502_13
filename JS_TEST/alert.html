@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="alert.css" />
   </head>
   <body>
-    <div class="alert-box" id="alert">Alert 박스</div>
+    <div class="alert-box" id="alert">
+      Alert 박스
+      <button onclick="document.getElementById('alert').style.display='none';">
+        닫기
+      </button>
+    </div>
     <button onclick='document.getElementById("alert").style.display="block";'>
       클릭
     </button>

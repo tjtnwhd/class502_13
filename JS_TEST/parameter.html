@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="alert.css" />
+  </head>
+  <body>
+    <div class="alert-box" id="alert">
+      <p id="alert-박스">alert 박스</p>
+
+      <button onclick="버튼1('none')">닫기</button>
+    </div>
+    <button onclick="버튼1('block')">클릭1</button>
+    <button onclick="버튼2()">클릭2</button>
+
+    <script>
+      function 버튼1(x) {
+        document.getElementById("alert").style.display = x;
+        document.getElementById("alert-박스").innerHTML =
+          "아이디를 입력안하셨어요.";
+      }
+      function 버튼2() {
+        document.getElementById("alert").style.display = "block";
+        document.getElementById("alert-박스").innerHTML =
+          "비번을 입력안하셨어요.";
+      }
+
+      //   document.getElementsByClassName("alert-box") [x]. ~(innerHTML, ...)
+      // = class명이 alert-box 인것들을 전부 찾음      찾은거 여려개중 x번쨰거를 선택해라
+
+      //   function plus(구멍) {    예)
+      //     2 + 구명;
+      //     plus(1);
+      //     plus(2);
+      //     plus(3);
+      //   }
+    </script>
+  </body>
+</html>
