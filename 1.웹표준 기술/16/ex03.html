@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        ul {
+        /* list-style: none; */
+        margin: 0;
+        padding: 0;
+        border: 1px solid #000;
+        height: 100px;
+      }
+      ul li:nth-of-type(3n + 1) {
+        background-color: orange;
+      }
+      ul li:nth-of-type(3n + 2) {
+        background-color: green;
+      }
+      ul li:nth-of-type(3n) {
+        background-color: blue;
+      }
+      .flex1{
+        display: flex;
+      }
+      .flex1 li{
+        width: 0;               /*  균등하게 여백을 비율별로 배분 */
+      }
+      .flex1 li:nth-of-type(1){   
+         flex-grow: 1;         /*   여백을 비율별로 배분 */
+      }
+      .flex1 li:nth-of-type(2){
+         flex-grow: 1;          /*   여백을 비율별로 배분 */
+      }
+      .flex1 li:nth-of-type(3){
+        flex-grow: 1;           /*  여백을 비율별로 배분 */
+      }
+    </style> 
+    <ul class="flex1">
+        <li>메뉴1</li>
+        <li>메뉴2메뉴2메뉴2메뉴2메뉴2메메뉴2메메뉴2메</li>
+        <li>메뉴3메뉴2메뉴2메뉴2</li>
+    </ul>   
+</body>
+</html>
