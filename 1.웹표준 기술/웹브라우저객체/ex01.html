@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- - defer : 외부 링크 연결하는 방식 //<script defer src="..."><script>
+-> src 스크립트 실행은 DOMContentLoaded 이벤트 발생 이후에 진행// -->
+
+    <script defer src="script.js"></script>
+
+    <!-- <script>
+        const button = document.getElementById('button');
+        console.log(button);
+        window.addEventListener('DOMContentLoaded',function(){  
+            /* document 객체 변환 완료 */
+            const button = document.getElementById('button');
+            console.log('button');
+        // });
+      </script>  -->
+    <button type="button" id="button">클릭</button>
+  </body>
+</html>
