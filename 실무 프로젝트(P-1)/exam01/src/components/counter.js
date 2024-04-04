@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 const Counter = () => {
+  let num = useRef(10);
   console.log('렌더링');
-  const [ number, setNumber ] = useState(0); /* 비구조화 할당 */
+  const [number, setNumber] = useState(0); /* 비구조화 할당 */
   //   const data = (useState = 0);
   //   const number = (data = [0]);
   //   const setNumber = (data = [1]);
