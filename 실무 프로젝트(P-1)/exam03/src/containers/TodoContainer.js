@@ -20,6 +20,7 @@ const TodoContainer = () => {
 
   // 할일 등록 처리
   const onSubmit = useCallback(
+    // useCallback 으로 감싸면 성능이 좋아진다.
     (e) => {
       e.preventDefault();
 
@@ -59,11 +60,12 @@ const TodoContainer = () => {
       setItems(newItems);
     */
 
-    setItems((prevItems) => {
-      return prevItems.map((item) =>
+    //setItems에서 prevItems 라는 현재 상태 값을 매개변수로 넣어서 호출
+    setItems((prevItems) =>
+      prevItems.map((item) =>
         item.id === id ? { ...item, done: !item.done } : item,
-      );
-    });
+      ),
+    );
   }, []);
 
   // 할일 목록 제거
