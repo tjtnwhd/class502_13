@@ -16,6 +16,8 @@ public class A {  // 실제 클래스명 : exam02.A
      void printNum(){
        numAAA = 100;
        System.out.println(numAAA);
+
+
      }
 
   }
