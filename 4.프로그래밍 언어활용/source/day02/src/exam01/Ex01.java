@@ -2,7 +2,9 @@ package exam01;
 
 public class Ex01 {
     public static void main(String[] args) {
+       // s1 : 참조변수, Student : 참조 자료형
         Student s1 = new Student();  // 생성자 함수
+
         s1.id =1000;  // 인스턴스 변수
         s1.name = "이이름";
         s1.subject = "자바";
