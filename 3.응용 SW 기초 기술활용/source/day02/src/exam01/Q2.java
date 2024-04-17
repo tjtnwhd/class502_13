@@ -10,10 +10,11 @@ public class Q2 {
            (예 : 학생1, 방번호 1번)
 */
 
-        for(int i=1; i<=40; i++){
-            int RoomNum = i % 10;
-            System.out.printf("학생%d,방번호%d%n",i,RoomNum);
-        }
+       for(int i =1; i<=40; i++){
+          int roomNum = i%10;
+           System.out.printf("학생%d,방번호%d%n",i,roomNum);
+       }
+
 
 
 //        for(int i =1; i <= 40; i++){

@@ -8,7 +8,7 @@ public class Q3 {
           이를 swich ~ case문으로 구현하시오(5층인 경우 ‘5층 헬스클럽입니다.’) */
 
 
-        int floor =5;
+        int floor = 4;
         switch (floor){
             case 1:
                 System.out.println("약국");
