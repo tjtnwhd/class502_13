@@ -6,9 +6,11 @@ public class Ex01 {
         Order Order = new Order();
         Order.buy();
         Order.sell();
+
         Buyer Buyer = Order;   //다형성
-        Seller Seller = Order; // 다형성
         Buyer.buy();
+
+        Seller Seller = Order; // 다형성
         Seller.sell();
     }
 }

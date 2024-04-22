@@ -5,7 +5,7 @@ public class Ex01 {
         Outer.Inner inner = new Outer.Inner();
         inner.method();
         Outer outer = new Outer();
-        System.out.println(outer.num);
+        System.out.println("num ="+outer.num);
 
     }
 }

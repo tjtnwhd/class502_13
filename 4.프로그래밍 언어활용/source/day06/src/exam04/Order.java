@@ -13,5 +13,6 @@ public class Order implements Buyer, Seller{
 
     public void order(){
 //    Seller.super.order();  // 둘중에 어떤것을 호출할지 명확하게 알려줘야한다.
+        System.out.println("Order에서 정의한 order");
     }
 }
