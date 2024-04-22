@@ -6,5 +6,9 @@ public class Ex01 {
        B b = new B();
         A a = new A();
         System.out.println(a.numA);
+
+
+        A ab = new B(); // 다형성
+        System.out.println(ab.numA);
     }
 }
