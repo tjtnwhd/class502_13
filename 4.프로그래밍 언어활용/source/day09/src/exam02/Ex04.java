@@ -1,0 +1,25 @@
+package exam02;
+
+import java.util.Map;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+// Pattern 클래스 (Pattern.CASE_INSENSITIVE) 사용 예제
+public class Ex04 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("문장을 입력하세요: ");
+        String str = sc.nextLine();
+
+//        Pattern p1 = Pattern.compile("[a-zA-Z]");// 메타문자, ( - = 범위 )
+//                                    // 대소문자 구분없이 모든 알파벳  (아래와 동일)
+        Pattern p1 = Pattern.compile("[a-z]",Pattern.CASE_INSENSITIVE);
+                                                   // 알파벳 대소문자 구분없이 체크
+        Matcher m1 = p1.matcher(str);
+        if(!m1.find()){
+            System.out.println("알파벳이 포합되지 않았습니다.");
+        }
+    }
+}
