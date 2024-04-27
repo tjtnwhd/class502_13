@@ -1,6 +1,6 @@
 package exam02;
   //  예외 처리 사용 예제 , RuntimeException,Exception (다형성)
-// Runtime이 없으면 체크하는게컴파일러가, 있으면 실행 과정중에 체크
+// Runtime이 없으면 컴파일러가 체크, 있으면 실행 과정중에 체크
 //  유연한 예외
 public class Ex01 {
     public static void main(String[] args) {
