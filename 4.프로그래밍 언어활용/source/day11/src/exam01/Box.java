@@ -2,7 +2,7 @@ package exam01;
    // Box<T> : 지네릭스 클래스,   Box : 윈시타입
         // T 는 Fruit의 하위클래스 (정보가 더 많아짐)
         //  Eatable 인터페이스도 구현해야된다. (정보가 더더 많아짐) (&, implement X - 형식)
-public class Box<T extends Fruit & Eatable>{     // <> : 타입 매개변수 ( T - Type 용도의 따라서 알아서 작성 )
+public class Box<T extends Fruit & Eatable>{ // <> : 타입 매개변수 ( T - Type 용도의 따라서 알아서 작성 )
     // T는 객체가 생성하는 시점
     private T item;
 //    private static T item2; // 사용불가 , 처음부터 공간을 할당 받으므로 자료형이 명확해야함.
